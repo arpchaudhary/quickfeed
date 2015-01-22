@@ -6,7 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="qf_text">QuickFeed</string>
 	<string name="snooze">Snooze</string>
-	<string name="dismiss">Dismiss</string>
+	<string name="stop">Stop</string>
 	<string name="refresh">Refresh</string>
+	<string name="apply">Apply</string>
+	<string name="options_str">This will contain the options\nincluding buttons\nand other configurations\nhence this space\nneeds to be used\nvery wisely</string>
 	
 </resources>

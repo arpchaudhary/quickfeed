@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/overlay_container"
-    android:layout_width="300dp"
+    android:layout_width="280dp"
     android:layout_height="wrap_content" >
 
     <RelativeLayout
         android:id="@+id/options_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
         android:background="@color/dark_overlay_background" >
 
         <TextView
@@ -20,7 +19,7 @@
             android:gravity="center"
             android:text="@string/qf_text"
             android:textColor="@android:color/white"
-            android:textSize="10dp" />
+            android:textSize="20dp" />
 
         <RelativeLayout
             android:id="@+id/feed_holder"
@@ -34,8 +33,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
+                android:text="@string/options_str"
                 android:textColor="@android:color/white"
-                android:textSize="10dp" />
+                android:textSize="15dp" />
         </RelativeLayout>
 
         <View
@@ -43,39 +43,46 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/feed_holder"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/divider"
+            android:background="@color/dark_overlay_background"
             android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/dismiss_button"
+                android:id="@+id/stop_button"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/dark_overlay_background"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
                 android:focusable="true"
                 android:gravity="center"
-                android:padding="10dp"
-                android:text="@string/dismiss"
+                android:text="@string/stop"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
 
             <Button
                 android:id="@+id/refresh_button"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/dark_overlay_background"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
                 android:focusable="true"
                 android:gravity="center"
-                android:padding="10dp"
                 android:text="@string/refresh"
                 android:textColor="@android:color/white"
-                android:textSize="15dp" />
+                android:textSize="16dp" />
+            <Button
+                android:id="@+id/apply_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/apply"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
         </LinearLayout>
     </RelativeLayout>
 
